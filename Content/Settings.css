@@ -1,0 +1,36 @@
+﻿#settingSearchBox {
+     margin-bottom: 10px;
+}
+#settingsTitle {
+    padding-left: 5px;
+}
+#settingsContent {
+    padding-left: 5px;
+}
+
+#settingsBreadCrumb {
+ color: #ccc;
+ background-color: #006;
+ padding: 3px;
+ margin-bottom: 25px;
+ }#settingsBreadCrumb ul {
+ margin-left: 0;
+ padding-left: 0;
+ display: inline;
+ border: none;
+ } #settingsBreadCrumb ul li {
+ margin-left: 0;
+ padding-left: 2px;
+ border: none;
+ list-style: none;
+ display: inline;
+ }
+#settingsBreadCrumb a{
+    color: white;
+}
+#settingsBreadCrumb a:visited { 
+    color: white;
+}
+.amxDataTable td{
+    padding: 2px;
+}

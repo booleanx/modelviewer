@@ -1,0 +1,9 @@
+﻿.newMessage {
+    font-weight: bold;
+    /*background: white !important;*/
+}
+
+.oldMessage {
+    /*font-weight: normal;*/
+    background: #F5F5F5 !important;   
+}

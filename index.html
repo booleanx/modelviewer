@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+    <title>3D Models</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/wfStyles-1.1.01.css" rel="stylesheet" />
+    <link href="../Content/style-1.1.css" rel="stylesheet" />
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/customstyles-1.1.01.css" rel="stylesheet" />
+    <link href="../Content/jquery.wijmo-pro.all.3.20142.45.min.css" />
+
+    <style type="text/css">
+        .progress.active .progress-bar {
+            -webkit-transition: none !important;
+            transition: none !important;
+        }
+    </style>
+
+
+    <script src="Scripts/jQuery/jquery-1.11.1.min.js"></script>
+    <script src="Scripts/jQuery/jquery-ui-1.10.4.min.js"></script>
+
+    <script src="Scripts/Threejs/three.min.js"></script>
+    <script src="Scripts/Threejs/ColladaLoader.js"></script>
+    <script src="Scripts/Threejs/TrackballControls.js"></script>
+    <script src="Scripts/Threejs/OrbitControls.js"></script>
+    <script src="Scripts/Threejs/Detector.js"></script>
+    <script src="Scripts/Threejs/Projector.js"></script>
+    <script src="Scripts/Threejs/stats.min.js"></script>
+
+    <script src="Scripts/Threejs/CopyShader.js"></script>
+    <script src="Scripts/Threejs/DotScreenShader.js"></script>
+    <script src="Scripts/Threejs/RGBShiftShader.js"></script>
+    <script src="Scripts/Threejs/EdgeShader.js"></script>
+
+    <script src="Scripts/Threejs/EffectComposer.js"></script>
+
+    <script src="Scripts/Threejs/RenderPass.js"></script>
+    <script src="Scripts/Threejs/MaskPass.js"></script>
+    <script src="Scripts/Threejs/ShaderPass.js"></script>
+    <script src="Scripts/Threejs/CannyEdgeFilterPass.js"></script>
+    <script src="Scripts/Threejs/InvertThreshholdPass.js"></script>
+
+
+    <script src="Scripts/Threejs/tinycolor.js"></script>
+    <script src="Scripts/Bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Scripts/wf/WFSideBarHandler.js" ></script>
+    <script src="Scripts/Wijmo/jquery.wijmo-open.all.3.20142.45.min.js"></script>
+    <script src="Scripts/Wijmo/jquery.wijmo-pro.all.3.20142.45.min.js"></script>
+    <script src="Scripts/wf/loading3dmodel.js"></script>
+    <script src="Scripts/wf/BaseScripts.js"></script>
+
+    <style>
+
+        </style>
+</head>
+<body>
+    <form >
+        <div class="row-fluid details-main-container">
+            <div class="details-data-left">
+
+
+            </div>
+            <div class="details-data-content">
+                <div id="formModelManipulation">
+
+                    <div class="top form-inline" style="background: #d9edf7 !important; padding: 5px;">
+                        <div id="close" class="glyphicon glyphicon-chevron-left"></div>
+                        <button type="button" id="in" class="btn btn-success glyphicon glyphicon-zoom-in"></button>
+                        <button type="button" id="out" class="btn btn-success glyphicon glyphicon-zoom-out"></button>
+                        <button type="button" id="left" class="btn btn-success glyphicon glyphicon-arrow-left"></button>
+                        <button type="button" id="right" class="btn btn-success glyphicon glyphicon-arrow-right"></button>
+                        <button type="button" id="up" class="btn btn-success glyphicon glyphicon-arrow-up"></button>
+                        <button type="button" id="down" class="btn btn-success glyphicon glyphicon-arrow-down"></button>
+                        <button type="button" id="rotateLeft" class="btn btn-success">Rotate Left</button>
+                        <button type="button" id="rotateRight" class="btn btn-success">Rotate Right</button>
+                        &nbsp;&nbsp;
+					    <div class="checkbox checkbox-inline">
+						    <label>
+							    <input type="checkbox" id="showSurfaces" value="Show Surfaces" checked="checked" />
+							    Show Surfaces
+						    </label>
+					    </div>
+					    <div class="checkbox checkbox-inline">
+						    <label>
+							    <input type="checkbox" id="animateModel" value="Animate" />
+							    Animate
+						    </label>
+					    </div>
+                    </div>
+			    </div>
+
+
+                <div class="progress">
+                    <div id="modelLoadProgressBar" class=" bar progress-bar progress-bar-success active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                        <span id="modelLoadProgressBarText">0%</span>
+                    </div>
+                </div>
+                <div id="div3dModel"></div>
+
+            </div>
+        </div>
+    </form>
+
+
+</body>
+</html>
